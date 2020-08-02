@@ -9,69 +9,131 @@ and open the template in the editor.
         <title>Registration page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="homecss.css">
+        <script src= "https://kit.fontawesome.com/11e03ece73.js"></script>
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+            input[type=text]:focus ,input[type=password]:focus  {
+                border: 3px solid #555;
+            }
+            input[type=text],input[type=password] {
+                width: 20%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 3px solid #ccc;
+            }
+            body, html {
+                height: 100%;
+                line-height: 1.8;
+            }
+            label{
+                align-content: left;
+            }
+            .container{
+                padding:16px
+            }
+            a:hover{
+                color: darkblue;
+                font-size: 20px
+            }
+            button {
+                border-radius: 12px;
+                background-color: lightblue;
+                align-content: center
+            }
+            /* Full height image header */
+            .bgimg-1 {
+
+
+                background-size: cover;
+                background-image: url("loginback1.jpg");
+                min-height: 100%;
+
+            }
+
+            .bar .button {
+                padding: 16px;
+            }
+        </style>
     </head>
     <body>
-        <div>
+        <div class="top">
 
             <div class="top">
-                <nav style="float:left">
-                    <a href="home.html"> <strong>HOME<strong></a>
-                </nav>
-    
-           
-            </div><br /><br />
+                <div class="bar white card " >
+
+                    <a href="home.html" style="text-decoration:none" class="bar-item button wide"><i class="fa fa-home"></i>Home</a>
+
+                    <div  class="right ">
+                        <a href="index.html" style="text-decoration:none" class="bar-item button wide"><i class="fas fa-user"></i>Login/Register</a>
+
+                        <a href="#" style="text-decoration:none"  class="bar-item button wide">About Us</a>
+                        <a href="#" style="text-decoration:none" class="bar-item button wide"><i class="fas fa-envelope"></i>Contact us</a>
+                        <a href="#" style="text-decoration:none" class="bar-item button   wide">  <i class="fas fa-hands-helping"></i>Help</a>
+                        <a href="admin.html" style="text-decoration:none" class="bar-item button wide"><strong><i class="fa fa-user-o" ></i>ADMIN</strong></a>
+                    </div>
+                </div>
+            </div>
+
+        </div><br /><br />
+
+
+        <div class="bgimg-1">
+
             <center>
-        <form action="index.html">
-           
-            <div >
-                <img src="login photo.png" alt="Avatar" >
-            </div>
-            
-            <br>
+                <form action="index.html">
+                    <table>
+                        <tr> <div >
+                            <img src="login photo.png" alt="Avatar" > 
+                        </div>
+                        </tr>
+                        <br>
 
-            
-                
-            
-            <div>
-                <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter name" name="name" required><br>
+                        <tr><div class="container">  
+                            <tr><span class="textc">Username : </span><br>
+                            <input type="text" placeholder="Enter name" name="name" required><br>
+                            </tr>
+                            <br>
+                            <br>
+                            <tr>
+                            <span class="textc">Email : </span><br>
 
-                <br>
-                <br>
-                
-                <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required><br>
+                            </tr>
+                            <br>
+                            <br>
+                            <tr>
+                            <span class="textc">Mobile no : </span><br>
+                            <input type="text" placeholder="Enter Mobile number" name="phone" required><br>
+                            </tr>
+                            <br>
+                            <br>
+                            <tr>
+                            <span class="textc">New Password : </span><br>
+                            <input type="password" placeholder="Enter Password" name="psw" required><br>
+                            </tr>
+                            <br>
+                            <br>
+                            <tr>
+                            <span class="textc">Reenter password : </span><br>
+                            <input type="password" placeholder="Reenter Password" name="rpsw" required><br>
+                            </tr>
+                            <br>
+                            <br>
+                            <button style="font-size: 30px" type="submit">Register</button><br>
 
-                <input type="text" placeholder="Enter Email" name="email" required><br>
-                <br>
-                <br>
-                <label for="phone"><b>Mobile number</b></label>
+                        </div>
+                        </tr>
 
-                <input type="text" placeholder="Enter Mobile number" name="phone" required><br>
-                <br>
-                <br>
-                <label for="psw"><b>New Password</b></label>
+                    </table>
+                </form>
 
-                <input type="password" placeholder="Enter Password" name="psw" required><br>
-                <br>
-                <br>
-                <label for="rpsw"><b>Reenter Password</b></label>
-
-                <input type="password" placeholder="Reenter Password" name="rpsw" required><br>
-                <br>
-                <br>
-                <button type="submit">Register</button><br>
-
-            </div>
-
-            
-           
-        </form>
-        <br>
-        <br>
-        <div>
-            <a href="index.html">already register?  Login</a>
+                <div>
+                    <a style="color:red" href="index.html">already register?  Login</a>
+                </div>
+            </center>
         </div>
-    </center>
-        </div>
+
     </body>
 </html>
