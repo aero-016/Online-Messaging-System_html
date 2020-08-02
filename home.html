@@ -6,51 +6,87 @@ and open the template in the editor.
 -->
 <html>
 
-<head>
-    <title>Home page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <head>
+        <title>Home page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="homecss.css">
+        <script src= "https://kit.fontawesome.com/11e03ece73.js"></script>
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-<body>
-    <header>
-        <h1>Online Messaging System</h1>
-    </header>
-    <div class="top">
+            body, html {
+                height: 100%;
+                line-height: 1.8;
+            }
+            
+            a:hover{
+                
+                background-color:lightslategrey
+            }
+            /* Full height image header */
+            .bgimg-1 {
 
-        <nav style="float:left">
-            <a href="#"><strong>Home</strong></a>
-            <a href="index.html">Login/Register</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact us</a>
-            <a href="#">Help</a>
-            <a href="#">addfriend</a>
-            <a href="#">Block friend</a>
-            <a href="profile.html">profile</a>
-           
-        </nav>
-    </div>
-    <nav style="float:right">
-        <a href="admin.html"><strong>ADMIN</strong></a>
-    </nav>
+                background-position: center;
+                background-size: cover;
+                background-image: url("back2.jpg");
+                min-height: 100%;
+            }
 
-    <br>
-    <br>
-    <div class="middle">
-        <img src="chat.jpg">
-        <h4>Welcome to Online Messaging System</h4>
-        <p></p>
-    </div>
+            .bar .button {
+                padding: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!--   <h1>Online Messaging System</h1> -->
+        </header>
+        <div class="top">
+            <div class="bar white card " >
 
-    <aside>
-        <p></p>
-    </aside>
+                <a href="#" style="text-decoration:none" class="bar-item button wide"><i class="fa fa-home"></i>Home</a>
 
-    <footer>
-        <p></p>
-    </footer>
+                <div  class="right ">
+                    <a href="index.html" style="text-decoration:none" class="bar-item button wide"><i class="fas fa-user"></i>Login/Register</a>
+
+                    <a href="#" style="text-decoration:none"  class="bar-item button wide">About Us</a>
+                    <a href="#" style="text-decoration:none" class="bar-item button wide"><i class="fas fa-envelope"></i>Contact us</a>
+                    <a href="#" style="text-decoration:none" class="bar-item button   wide">  <i class="fas fa-hands-helping"></i>Help</a>
+                    <a href="admin.html" style="text-decoration:none" class="bar-item button wide"><strong><i class="fa fa-user-o" ></i>ADMIN</strong></a>
+                </div>
+            </div>
+        </div>
+        <header class="bgimg-1 display-container grayscale-min">
+            <div class="  bg-text" style="padding:48px">
+                <span class="jumbo ">Start something that matters</span><br> 
+               
+                <span class=" large">Let's connect</span><br><br>
+               
+            </div>
+
+            
+        </header>
 
 
-</body>
+
+
+        <br>
+        <div class="middle">
+
+            <h4>Welcome to Online Messaging System</h4>
+            <p></p>
+        </div>
+
+        <aside>
+            <p></p>
+        </aside>
+
+        <footer>
+            <p></p>
+        </footer>
+
+
+    </body>
 
 </html>
