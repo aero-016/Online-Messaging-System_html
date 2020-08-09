@@ -13,6 +13,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="homecss.css">
+        <script type="text/javascript" src="index.js"></script>  
         <script src= "https://kit.fontawesome.com/11e03ece73.js"></script>
         <style>
             body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -84,7 +85,7 @@ and open the template in the editor.
 
         <div class=" bgimg-1">
             <center>
-                <form action="login.html">
+                <form name="login1"  onsubmit="validation_form()">
                     <br>
                     <img src="login photo.png" alt="Avatar">
 
@@ -92,7 +93,7 @@ and open the template in the editor.
                     <div class="container">
                         <br>
                         <span class="textc">Username : </span><br>
-                        <input type="text" placeholder="Enter Username" name="uname" required><br>
+                        <input type="text" placeholder="Enter Username" name="uname"   required><br>
 
                         <br>
                         <br>
@@ -101,7 +102,7 @@ and open the template in the editor.
                         <br>
                         <br>
 
-                        <button style="font-size: 30px" type="submit">Login</button><br>
+                        <button style="font-size: 30px" type="submit" name="button1" onclick="validate_cre()">Login</button><br>
 
                     </div>
 
