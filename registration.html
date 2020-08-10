@@ -83,7 +83,7 @@ and open the template in the editor.
         <div class="bgimg-1">
 
             <center>
-                <form action="index.html">
+                <form name="registration">
                     <table>
                         <tr> <div >
                             <img src="login photo.png" alt="Avatar" > 
@@ -92,8 +92,14 @@ and open the template in the editor.
                         <br>
 
                         <tr><div class="container">  
-                            <tr><span class="textc">Username : </span><br>
-                            <input type="text" placeholder="Enter name" name="name" required><br>
+                            <tr><span class="textc">Name : </span><br>
+                            <input type="text" placeholder="Enter name" name="name" onclick="return pattern_val()" required><br>
+                            </tr>
+                            <br>
+                            <br>
+                           
+                            <tr><span class="textc">UserName : </span><br>
+                            <input type="text" placeholder="Enter Username" name="uname" required><br>
                             </tr>
                             <br>
                             <br>
