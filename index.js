@@ -31,3 +31,12 @@ function validate_cre() {
     window.location.replace("index.html");
   }
 }
+
+function validate_reg(){
+     var password_r = document.forms["registration"]["psw"].value;
+      var repassword_r = document.forms["registration"]["rpsw"].value;
+      if(password_r!==repassword_r)
+      {
+          alert("password and reenter password should be same");
+      }
+}
