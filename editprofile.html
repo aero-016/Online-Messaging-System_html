@@ -12,39 +12,108 @@ and open the template in the editor.
     <title>Edit profile</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="homecss.css">
+        <script src= "https://kit.fontawesome.com/11e03ece73.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+            body, html {
+                height: 100%;
+                line-height: 1.8;
+                background-color:darkcyan;
+            }
+            img{
+                border-radius: 50%;
+                height:200px;
+                width:250px
+            }
+            a:hover{
+                
+                background-color:lightslategrey
+            }
+            /* Full height image header */
+            .bgimg-1 {
+                
+                background-position: center;
+                background-size: cover;
+                background-image: url("back2.jpg");
+                min-height: 100%;
+            }
+
+            .bar .button {
+                padding: 16px;
+            }
+</style>
 </head>
 
 <body>
-    <center>
-        <div class="top">
-            <nav style="float:left">
-                <a href="home.html"> <strong>HOME<strong></a>
-            </nav>
-        </div><br /><br />
-        <form>
-            <img src="login photo.png"><br><br>
-            <button type="submit"  name='change photo'>Change profile photo</button>
-        </form><br><br>
-        <form action="profile.html"> 
+    
+         <div class="top">
+            <div class="bar white card " >
 
-            <div>
-                <label for="uname"><b>Username</b></label><br>
-                <input type="text" placeholder="Enter Username" value=" " name="uname" ><br>
+                <a href="main.html" style="text-decoration:none" class="bar-item button wide"><i class="fa fa-home"></i>Home</a>
 
-                <br>
-                <br>
-                <label for='bio'><b>Bio</b></label><br>
-
-                <input type="text" placeholder="Enter about your self" value=" " name="bio" required><br>
-                <br>
-                <br>
-
-                <button type="submit">Edit</button><br>
-
+                <div  class="right ">
+                   
+                      <a href="#" style="text-decoration:none" class="bar-item button wide" ><i class="fas fa-user"></i>Friends</a>      
+                    <a href="chat.html" style="text-decoration:none"  class="bar-item button wide">chat</a>
+                    <a href="#" style="text-decoration:none" class="bar-item button wide"><i class="fas fa-envelope"></i>settings</a>
+                  
+                    <a href="#" style="text-decoration:none"  class="bar-item button wide">About Us</a>
+                    <a href="#" style="text-decoration:none" class="bar-item button wide"><i class="fas fa-envelope"></i>Contact us</a>
+                    <a href="#" style="text-decoration:none" class="bar-item button   wide">  <i class="fas fa-hands-helping"></i>Help</a>
+                    <a href="admin.html" style="text-decoration:none" class="bar-item button wide"><strong><i class="fa fa-user-o" ></i>ADMIN</strong></a>
+                </div>
             </div>
+         </div> <br> <br /><br />
+         
+         
+    <div class="container">  
+        <div class="row">
+            <div class="col-sm-2">
+                
+            </div>
+            <div class="col-sm-10">
+            <img src="download.jpeg" ><br><br>
+               
+            </div>
+           
+        </div>
+      
+         <div class="row">
+                <label class="col-sm-2"><h4>change your photo</h4></label>
+                <input class="col-sm-3 " type="file"/>
+                <input class="col-sm-1 btn btn-secondary"  type="submit" value = "Upload"/>
+             </div>
+      <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            
+           
+            <form action="profile.html"> 
 
-        </form>
-    </center>
+                <div>
+                    <label for="uname"><b>Username:</b></label>
+                    <input type="text" class="form-control" placeholder="Enter Username" value=" " name="uname" ><br>
+                   
+                    
+                    <label for='bio'><b>Bio:</b></label>
+                    <input type="text" class="form-control" placeholder="Enter about your self" value=" " name="bio" required><br>
+                    
+                   
+                    <label for='website'><b>Website&nbsp;:</b></label>
+                    <input type="text" class="form-control"  placeholder="Enter  your website" value=" " name="website" required><br>
+                   
+                    <br>
+                    <button type="submit" class="btn btn-secondary">Edit</button><br>
+                </div>
+            </form>
+          </div>
+      </div>
+    </div>
 
 
 
