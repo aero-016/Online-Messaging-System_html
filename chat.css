@@ -1,19 +1,10 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 07-Sep-2020, 12:20:46 AM
-    Author     : vishant
-*/
 body {
-  background-image: url('');
   background-color: #3498db;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
 .container {
   margin: 60px auto;
   background: #fff;
@@ -27,56 +18,55 @@ body {
   border-radius: 40px;
 }
 
-.settings-tray{
-  padding:10px 15px;
-   background : #eee;
-    border-radius:7px;
-
-    
-      i {
-        margin-top: 10px;
-      font-size: 25px;
-      color: grey;
-      margin-left: 14px;
-        transition:.3s;
-    
-  &:hover{
-    color:#74b9ff;
-    cursor:pointer;
-  
-  }
-    }
+.settings-tray {
+  background: #eee;
+  padding: 10px 15px;
+  border-radius: 7px;
 }
-.search-box{
+.settings-tray .no-gutters {
+  padding: 0;
+}
+.settings-tray--right {
+  float: right;
+}
+.settings-tray--right i {
+  margin-top: 10px;
+  font-size: 25px;
+  color: grey;
+  margin-left: 14px;
+  transition: .3s;
+}
+.settings-tray--right i:hover {
+  color: #74b9ff;
+  cursor: pointer;
+}
+
+.search-box {
   background: #fafafa;
   padding: 10px 13px;
-  
-  .input-wrapper {
-    background: #fff;
-    border-radius: 40px;
-    
-    i {
-      color: grey;
-      margin-left: 7px; 
-      vertical-align: middle;
-    }
-  }
+}
+.search-box .input-wrapper {
+  background: #fff;
+  border-radius: 40px;
+}
+.search-box .input-wrapper i {
+  color: grey;
+  margin-left: 7px;
+  vertical-align: middle;
 }
 
 input {
   border: none;
   border-radius: 30px;
   width: 80%;
-
-  &::placeholder {
-    color: #e3e3e3;
-    font-weight: 300;
-    margin-left: 20px;
-  }
-
-  &:focus {
-    outline: none;
-  }
+}
+input::placeholder {
+  color: #e3e3e3;
+  font-weight: 300;
+  margin-left: 20px;
+}
+input:focus {
+  outline: none;
 }
 
 .friend-drawer {
@@ -85,34 +75,31 @@ input {
   vertical-align: baseline;
   background: #fff;
   transition: .3s ease;
-  
-  &--grey {
-    background: #eee;
-  }
-  
-  .text {
-    margin-left: 12px;
-    width: 70%;
-    
-    h6 {
-      margin-top: 6px;
-      margin-bottom: 0;
-    }
-    
-    p {
-      margin: 0;
-    }
-  }
-  
-  .time {
-    color: grey;
-  }
-  
-
 }
-
-hr {
-  margin: 5px auto;
-  width: 60%;
+.friend-drawer--grey {
+  background: #eee;
+}
+.friend-drawer .text {
+  margin-left: 12px;
+  width: 70%;
+}
+.friend-drawer .text h6 {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.friend-drawer .text p {
+  margin: 0;
+}
+.friend-drawer .time {
+  color: grey;
+}
+.friend-drawer--onhover:hover {
+  background: #74b9ff;
+  cursor: pointer;
+}
+.friend-drawer--onhover:hover p,
+.friend-drawer--onhover:hover h6,
+.friend-drawer--onhover:hover .time {
+  color: #fff !important;
 }
 
