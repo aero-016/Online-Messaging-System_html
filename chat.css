@@ -1,27 +1,52 @@
+
 body {
   background-color: #3498db;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  
+  
 }
 
-.container {
-  margin: 60px auto;
-  background: #fff;
-  padding: 0;
+.container-fluid {
+  background:url('mainback.jpg');
+  padding: 10px;
   border-radius: 7px;
+ width: 1920px;
+ position: fixed; 
+  
 }
-
 .profile-image {
+    
   width: 50px;
   height: 50px;
   border-radius: 40px;
+  
 }
 
-.settings-tray {
-  background: #eee;
-  padding: 10px 15px;
-  border-radius: 7px;
+.settings-tray {    
+    margin: 0px 0px;
+    background: #0f3e45;
+  padding: 10px;
+  
+  
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccccff; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #78a79c; 
+    cursor: pointer;
+    height:10px; 
 }
 .settings-tray .no-gutters {
   padding: 0;
@@ -29,6 +54,7 @@ body {
 .settings-tray--right {
   float: right;
 }
+
 .settings-tray--right i {
   margin-top: 10px;
   font-size: 25px;
@@ -42,56 +68,79 @@ body {
 }
 
 .search-box {
-  background: #fafafa;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 13px;  
+  background: #0f3e45;
   padding: 10px 13px;
+  border-radius: 7px;
 }
-.search-box .input-wrapper {
-  background: #fff;
-  border-radius: 40px;
-}
-.search-box .input-wrapper i {
-  color: grey;
+
+.search-box i {
+  color: #ccccff;
   margin-left: 7px;
   vertical-align: middle;
 }
 
 input {
   border: none;
+  background: #0f3e45;
   border-radius: 30px;
   width: 80%;
 }
 input::placeholder {
-  color: #e3e3e3;
+  color: #ccccff;
   font-weight: 300;
   margin-left: 20px;
 }
 input:focus {
+    color: #ccccff;
+    font-weight: 400;
   outline: none;
 }
 
+
 .friend-drawer {
-  padding: 10px 15px;
+    position:relative;
+  border-bottom-style: double ; 
+  padding: 10px;
   display: flex;
-  vertical-align: baseline;
-  background: #fff;
+  flex-direction: row;
+  background:darkslategrey;
   transition: .3s ease;
 }
-.friend-drawer--grey {
-  background: #eee;
+.settings-tray .friend-drawer{
+  
+    border-bottom-style: hidden ;
+  padding:0px;
+  display: flex;
+  vertical-align: baseline;
+  background:#0f3e45;
+  transition: .3s ease;
 }
 .friend-drawer .text {
   margin-left: 12px;
   width: 70%;
+  color: #ffffff;
+}
+.settings-tray .friend-drawer .text{
+  margin:10px 0px 10px 12px;
+  width:55%;
+  color: #ffffff;  
 }
 .friend-drawer .text h6 {
   margin-top: 6px;
   margin-bottom: 0;
+   color: #ffffff;
 }
 .friend-drawer .text p {
   margin: 0;
+  color: #ffffff; 
+  font-size:xx-small;
 }
 .friend-drawer .time {
-  color: grey;
+   color: #ffffff;
+  
 }
 .friend-drawer--onhover:hover {
   background: #74b9ff;
@@ -102,4 +151,67 @@ input:focus {
 .friend-drawer--onhover:hover .time {
   color: #fff !important;
 }
+hr{
+    color: #ffffff;
+    width:60%;
+}
 
+.chat-box--left{
+      animation: fadeIn 1s ease-in;
+    padding: 7px;
+    border-left-style: ridge;
+    border-left-color: #006666;
+    border-width: 9px;
+    background: #006666;
+    width:300px;
+    border-radius: 10px;
+    
+}
+.chat-box--right{
+      animation: fadeIn 1s ease-in;
+    padding: 7px;
+    border-right-style: ridge;
+    border-right-color: #006666;
+    border-width:9px; 
+    background: #0d8b7f;
+    width:300px;
+    border-radius: 10px;
+    
+}
+.chat-box .text{
+    
+    color:#ffffff;
+    padding:10px;
+    width: 70%
+}
+
+.chat-box--tray{
+    display:flex;
+    flex-direction:row;
+    margin:15px 15px;
+    background:#0f3e45;
+    height: 50px;
+    
+}
+.chat-box--tray i{
+    color: #ccccff;
+    margin-top: 15px;
+    margin-left:20px;
+    margin-right:20px;
+    vertical-align: middle;
+    
+}
+.chat-box--tray input{
+    background: #b5d0cd;
+    width: 90%;
+    margin: 10px;
+}
+
+.chat-box--tray input:placeholder{
+  color:#0f3e45;
+  font-weight: 300;
+}
+.chat-box--tray input:focus{
+  color: #000;
+  font-weight: 300;   
+}
