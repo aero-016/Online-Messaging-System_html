@@ -8,22 +8,20 @@
         <link rel="stylesheet" href="chat.css">
         <link rel="stylesheet" href="bootstrap.css">
        <link rel="stylesheet" href="bootstrap-grid.min.css">
-         <script  type="text/javascript" src="chat.js"></script>  
+     
               <script  type="text/javascript" src="jquery-3.5.1.min.js"></script>  
+                  <script  src="chat.js"></script>  
         <script src= "https://kit.fontawesome.com/11e03ece73.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
         <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">   
-        <script>
-            $(document).ready(function(){
-$('.friend-drawer--onhover').click(function(){
-   $('#chat').hide('slow').show('slow');
-});
-});
-        </script>
-            
-            
+        
+
+<!--        <script>
+             var children = document.getElementById( "chat-message" );
+     children.append('<div>hi i am vishant</div>');
+        </script>-->
 
 
         <style>
@@ -58,7 +56,7 @@ $('.friend-drawer--onhover').click(function(){
         <br>
         <div class="container-fluid" >
             <div class="row no-gutters"  >
-                <div class="col-sm-4 " >
+                <div class="col-sm-4 no-gutters" >
                     <div class="row no-gutters" style="height:15%">
                         <div class="col-sm-12">
                             <div class="settings-tray  " >
@@ -72,14 +70,14 @@ $('.friend-drawer--onhover').click(function(){
                             <div class="search-box border-right">
 
                                     <i class="material-icons">search</i>
-                                    <input placeholder="Search here" type="text">
+                                    <input placeholder="Search here" id="search" type="text">
                               
                             </div>    
                         </div>
 
                     </div>
 
-                    <div class="row no-gutters border-right" style="height:70%;overflow-y: scroll;">
+                    <div class="row no-gutters border-right" id="friends" style="height:70%;overflow-y:auto;">
                         <div class="col-sm-12">
                             <div class="friend-drawer friend-drawer--onhover" >
                                 <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/robocop.jpg" alt="">
@@ -188,11 +186,6 @@ $('.friend-drawer--onhover').click(function(){
 
                         </div>
                     </div>
-
-
-
-
-
                 </div>
                 <div class="col-sm-8 no-gutters ">
                     <div class="row" >
@@ -212,67 +205,12 @@ $('.friend-drawer--onhover').click(function(){
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="chat" style="height:68.60%;overflow-y: scroll;">
-                        <div class="col-sm-12">
-                            <div class="row float-left">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--left" style="">
-                                        1 
-                                    </div>     
-                                </div>
-
-                            </div> 
-                            <br>
-                            <br>
-                            <div class="row float-right">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--right" style="">
-
-                                        2
-                                    </div>     
-                                </div>
-
-                            </div>   
-                            <br>
-                            <br>
-                            <div class="row float-left">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--left" style="">
-                                        3
-                                    </div>     
-                                </div>
-                            </div>   
-                            <br> 
-                            <br>
-                            <div class="row float-right">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--right" style="">
-                                        4
-                                    </div>     
-                                </div>
-
-                            </div>   
-                            <br>
-                            <div class="row float-left">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--left" style="">
-                                        5
-                                    </div>     
-                                </div>
-
-                            </div>   
-                            <br>
-                            <br>
-                            <div class="row float-right">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--right" style="">
-                                        6
-                                    </div>     
-                                </div>
-
-                            </div>   
-                            <br>
-                            <br>
+                    
+                    <div class="row" id="chat" style="height:73vh;overflow-y: auto;overflow-x:hidden;">
+                        
+                        <div class="col-sm-12" id="chat-message">
+                            
+                           
                             <div class="row float-left">
                                 <div class="col-sm-6">
                                     <div class="chat-box--left" style="">
@@ -292,66 +230,6 @@ $('.friend-drawer--onhover').click(function(){
 
                             </div>   
                             <br><br>
-
-                            <div class="row float-left">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--left" style="">
-                                        1 
-                                    </div>     
-                                </div>
-
-                            </div> 
-                            <br>
-                            <br>
-                            <div class="row float-right">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--right" style="">
-
-                                        2
-                                    </div>     
-                                </div>
-
-                            </div>   
-                            <br>
-                            <br>
-                            <div class="row float-left">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--left" style="">
-                                        3
-                                    </div>     
-                                </div>
-                            </div>   
-                            <br> 
-                            <br>
-                            <div class="row float-right">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--right" style="">
-                                        4
-                                    </div>     
-                                </div>
-
-                            </div>   
-                            <br>
-                            <div class="row float-left">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--left" style="">
-                                        5
-                                    </div>     
-                                </div>
-
-                            </div>   
-                            <br>
-                            <br>
-                            <div class="row float-right">
-                                <div class="col-sm-6">
-                                    <div class="chat-box--right" style="">
-                                        6
-                                    </div>     
-                                </div>
-
-                            </div>   
-                            <br>
-                            <br>
                             <div class="row float-left">
                                 <div class="col-sm-6">
                                     <div class="chat-box--left" style="">
@@ -371,17 +249,301 @@ $('.friend-drawer--onhover').click(function(){
 
                             </div>   
                             <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            <div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br><div class="row float-left">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--left" style="">
+                                        7
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row float-right">
+                                <div class="col-sm-6">
+                                    <div class="chat-box--right" style="">
+                                        8
+                                    </div>     
+                                </div>
+
+                            </div>   
+                            <br><br>
+                            
                         </div>
                     </div>
-                    
-                    <div class="row" id="chat">
+                    <div  class="row" id="chat" >
                         <div class="col-sm-12">
                             <div class="chat-box--tray">
                                 <i class="material-icons">
                                     sentiment_satisfied_alt
                                 </i>
-                                <input placeholder="Type your message..." type="text">
-   
+                                <input id="message"  placeholder="Type your message..." type="text">
+                               
                                 <i class="material-icons">
                                 send
                                 </i>
@@ -389,10 +551,6 @@ $('.friend-drawer--onhover').click(function(){
                             
                         </div>
                     </div>
-
-
-
-
                 </div>    
 
 
